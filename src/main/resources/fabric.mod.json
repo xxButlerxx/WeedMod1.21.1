@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "weedmod",
+	"version": "${version}",
+	"name": "WeedMod",
+	"description": "Big WEed MoD",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/weedmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.alex.weedmod.WeedMod"
+		],
+		"fabric-datagen": [
+			"net.alex.weedmod.WeedModDataGenerator"
+		],
+		"client": [
+			"net.alex.weedmod.WeedModClient"
+		]
+	},
+	"mixins": [
+		"weedmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

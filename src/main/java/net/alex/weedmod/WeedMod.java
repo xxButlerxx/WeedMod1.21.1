@@ -1,6 +1,7 @@
 package net.alex.weedmod;
 
 import net.alex.weedmod.block.ModBlocks;
+import net.alex.weedmod.item.ModItemGroups;
 import net.alex.weedmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -15,6 +16,7 @@ public class WeedMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
 		ModBlocks.registerBlocks();
 

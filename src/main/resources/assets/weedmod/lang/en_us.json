@@ -1,4 +1,6 @@
 {
   "item.weedmod.weed_leaf": "Cannabis Leaf",
-  "item.weedmod.cannabis": "Cannabis"
+  "item.weedmod.cannabis": "Cannabis",
+
+  "block.weedmod.weed_block": "Cannabis Block"
 }

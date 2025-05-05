@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "catagory": "building",
+  "ingredients": [
+    {
+      "item": "weedmod:weed_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "weedmod:cannabis"
+  }
+}

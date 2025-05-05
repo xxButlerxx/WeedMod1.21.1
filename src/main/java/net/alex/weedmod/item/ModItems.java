@@ -13,6 +13,7 @@ public class ModItems {
 
     public static final Item WEED_LEAF = registerItem("weed_leaf", new Item(new Item.Settings()));
     public static final Item CANNABIS = registerItem("cannabis", new Item(new Item.Settings()));
+    public static final Item COIN = registerItem("coin", new Item(new Item.Settings()));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(WeedMod.MOD_ID, name), item);
@@ -24,6 +25,7 @@ public class ModItems {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
             entries.add(WEED_LEAF);
             entries.add(CANNABIS);
+            entries.add(COIN);
         });
     }
 
